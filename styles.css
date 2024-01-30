@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    background: linear-gradient(to right, #eeeeee 1px, transparent 1px),
+        linear-gradient(to bottom, #eee 1px, transparent 1px);
+    background-size: 30px 30px;
+    overflow: hidden;
+}
+
+
+
+#game-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    margin: 10rem 0;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    color: #005c91;
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); */
+    /* background: rgb(211, 211, 211); */
+    background-blend-mode: multiply;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2rem;
+    width: 100%;
+    font-weight: 600;
+    top: 0;
+    margin: 2rem 0 0;
+    position: absolute;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+#points,
+#level {
+    margin: 0rem 2rem;
+}
+
+strong {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+}
+
+#game-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+
+#game-container #logo {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+}
+
+#last_point {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    color: #1C1C1C;
+    font-weight: 600;
+    transition: all 0.2s;
+    padding: 27px 17px;
+    border: 1px solid #005c91;
+    box-shadow: 5px 5px 0 #005c91;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #113343;
+}
+
+button:hover {
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1400px) {
+    #game-container{
+        padding: 2rem 0;
+        margin-top: 16rem;
+    }
+
+    #game-container h1{
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin: 10px;
+        padding: 15px 17px;
+        font-size: 16px;
+    }
+
+    #game-container img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #game-container #logo {
+        width: 300px;
+        height: auto;
+        top: 1.5rem;
+    }
+
+    .extra {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #game-container #logo {
+        width: 300px;
+        height: auto;
+        top: 5rem;
+    }
+}
